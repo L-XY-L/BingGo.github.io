@@ -1,68 +1,42 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Li Jun's homepage</title>
-   
+  <meta charset="utf-8">
+  <title>Secure Computation Papers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.min.css">  
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
-<body>
+<body onload="init()">
   <div class="container">
-    <header class="navbar">
-      <nav class="nav nav-masthead justify-content-left">
-        <a class="nav-link active" href="./index.html">Zhigang Chen</a>
-        <a class="nav-link"></a>
-        <a class="nav-link"></a>
-        <a class="nav-link" href="./Publications.html">Publications</a>
-        <a class="nav-link" href="./FHE Resources.html">FHE Resources</a>
-        <a class="nav-link" href="./FHE and Machine Learning References.html">FHE and Machine Learning References</a>
-        <a class="nav-link" href="./A List of FHE Papers.html">A List of FHE Papers</a>  
-      </nav>
-    </header>
-
-    <main role="main" class="cover" id="about">
-      <div class="row">
-          <div class="col-lg-4">
-              <br>
-              <br>
-              <br>
-              <img src=".jpg" class="img-circle">
-              <p></p>
-              <p>JUN LI</p>
-              <p>[李俊]</p>
-              <p class="location">Undergraduate student</p>
-              <p class="organization">Zhejiang wanli university</p>
-              <a class="mailbox"> Email:LIWENBAISYsy@163.com</a>
-              <br>
-              <p></p>
-        
-              <br>
-              <br>
-         
-            </div>
-          
-            <div class="col-lg-6">
-                <br>
-                <br>
-                <br>
-                <h3 class="about">About Me</h3>
-                <br>
-                <p class="content_1">I am an professor at Zhejiang Wanli University, PR China. I have been working on fully homomorphic encryption since 2011. My research interests include fully homomorphic encryption and blockchain. I received BSc in mathematics in 1994 and MSc in computer software and theory in 2004 and PhD in cryptography in the Nanjing University of Aeronautics and Astronautics in 2015.</p>
-                <p class="content_2">I was an academic visitor at Royal Holloway, University of London, Information Security Group from Aug 2013 to Aug 2014. I was a visiting researcher at State Key Laboratory of Information Security, Chinese Academy of Sciences from 2017 to 2018. Honorary academic advisor of the Asian Blockchain Academic Institute. Zhejiang Province young and middle-aged academic leaders. Communication member of Technical Committee on Block Chain of CCF.</p>
-                <br>
-
-              
-                <p></p>
-              </div>
+    <div class="row">
+      <div class="offset-by-ten two columns" id="about-div" style="text-align:center;">
+        <p>
+          <small><a href="about.html">about this site</a></small>
+        </p>
       </div>
-    </main>
+    </div>
+    <div class="row">
+      <div class="twelve columns" id="main-div" style="margin-top: 10%">
+        <h4>A List of Secure Computation
+        Papers <a href="rss/list.rss"><img src="images/feed-icon-14x14.png" alt="rss-icon"></a></h4>
+      </div>      
+    </div>
+    <div class="row">
+      <div class="twelve columns" id="search-div">
+        <p>
+          <input type="text" name="search" id="search-input" placeholder="Search..."
+          onkeyup="search()"><br/>
+        </p>
+        <div>
+        </div>
+        <div class="row">
+          <div class="twelve columns" id="list-div">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <script async src="scripts/listgen.min.js"></script>
 </body>
-
-<footer class="navbar-fixed-bottom">
-    <div style=" height:75px " ></div>
-</footer>
-
 </html>
-
